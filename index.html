@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Wait for it · stjean.me</title>
+    <!-- 
+      _   _                                   
+     | | (_)                                  
+  ___| |_ _  ___  __ _ _ __    _ __ ___   ___ 
+ / __| __| |/ _ \/ _` | '_ \  | '_ ` _ \ / _ \
+ \__ \ |_| |  __/ (_| | | | |_| | | | | |  __/
+ |___/\__| |\___|\__,_|_| |_(_)_| |_| |_|\___|
+        _/ |                                  
+       |__/    
+    -->
+    <meta name="author" content="Pierre-Alexandre St-Jean">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <!--
+    Oh and this awesome browser that has a bad upgrade path should render html5 
+    elements but does not. So sorry we make the load charge higher, oh and we 
+    block the page for the time being. UPGRADE YOUR BROWSER TO A NEWER VERSION!
+    -->
+    <!-- TODO: add thoses files -->
+    <!--[if lt IE 9]>
+    <script src="assets/scripts/html5shiv.js"></script>
+    <script src="assets/scripts/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Google Font -->
+
+    <link href="http://fonts.googleapis.com/css?family=Oswald:700|Neuton" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy|Exo+2:400,900' rel='stylesheet' type='text/css'>
+    <!-- Styles -->
+    <style type="text/css" media="screen">
+      body { font: 400 1em/1.5 "Sorts Mill Goudy"; background: #f5f5f3; color: rgba(0,0,0,.25); text-align: center; margin: 0 }
+
+      p {	letter-spacing: .5em;
+        display: inline-block;
+        border: 4px double rgba(255,255,255,.25);
+        border-width: 4px 0;
+        padding: 1.5em 0em;
+        position: absolute;
+        top: 18%;
+        left: 50%;
+        width: 40em;
+        margin: 0 0 0 -20em;
+      }
+
+      p span {
+        text-transform: uppercase; 
+        font: 700 3em/1 "Exo 2", sans-serif;
+        letter-spacing: 0;
+        padding: .25em 0 .325em;
+        display: block;
+        margin: 0 auto;
+        text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+        /* Clip Background Image */
+
+        background: url(http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png) repeat-y;
+        -webkit-background-clip: text;
+
+        /* Animate Background Image */
+
+        -webkit-text-fill-color: transparent;
+        -webkit-animation: aitf 80s linear infinite;
+
+        /* Activate hardware acceleration for smoother animations */
+
+        -webkit-transform: translate3d(0,0,0);
+        -webkit-backface-visibility: hidden;
+      }
+
+      /* Animate Background Image */
+
+      @-webkit-keyframes aitf {
+        0% { background-position: 0% 50%; }
+        100% { background-position: 100% 50%; }
+      }
+    </style>
+  </head>
+  <body>
+    <p>It's coming to a computer near you <span>http://pa.Stjean.me</span> &mdash; Wait for it! &mdash;</p>
+    <!-- Scripts Bottom -->
+  </body>
+</html>
+
