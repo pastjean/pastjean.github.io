@@ -25,13 +25,24 @@
     <link href='http://fonts.googleapis.com/css?family=Exo+2:400,900' rel='stylesheet' type='text/css'>
     <!-- Styles -->
     <style type="text/css" media="screen">
+      *, :after, :before {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
       body { 
        font: 400 1em/1.5 "Exo 2";
        background: #fff; 
        color: #081926;  
        margin: 0;
       }
-
+      a {text-decoration:none;}
+      section{margin-top:50px;}
+      body >  section{
+        max-width:768px;
+        margin:0 auto;
+      }
+      
       .round-box {
         color: #2ecc71;
         display: inline-block;
@@ -42,24 +53,43 @@
         cursor: grab;
         transition:all 0.2s ease-out;
       }
-      .round-box:hover{
+      .round-box:hover,.round-box:focus{
         color:#fff;
         background-color:#2ecc71;
       }
-      section{margin-top:50px;}
-      body >  section{
-        max-width:768px;
-        margin:0 auto;
+
+      .notification{
+        padding:15px;
+        border-radius:0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
       }
-      a {text-decoration:none;}
+      .notification.alert{
+        background: #FFD522;
+        color:white
+      }
+      .bookmarklet-backdrop{
+        display: none;
+      }
+      .bookmarklet:focus ~ .bookmarklet-backdrop,
+      .bookmarklet:hover ~ .bookmarklet-backdrop {
+        display: block;
+      }   
+   
     </style>
   </head>
   <body>
     <section>
     <h1>Tools</h1>
-    <p>Bookmarklet pour accéder par aux sites d'articles par la bibliothèque de l'Université Laval</p>
-    <p><a class="round-box" title="Accès par ULaval" href='javascript:(function(h,u,undefined){if(h.search(u)==-1){window.location.hostname = h + u}})(window.location.hostname,".acces.bibl.ulaval.ca")'>𝌺 Accès par ULaval</a>
-    </p>
+    <p>Bookmarklet to access sites of articles that you can access in Université Laval campus</p>
+    <a class="round-box bookmarklet" title="Accès par ULaval" href='javascript:(function(h,u,undefined){if(h.search(u)==-1){window.location.hostname = h + u}})(window.location.hostname,".acces.bibl.ulaval.ca")'>𝌺 Accès par ULaval</a>
+    <div class="notification alert bookmarklet-backdrop">
+      Drag to your bookmarks bar
+    </div>
     </section>
     <!-- Scripts Bottom -->
   </body>
