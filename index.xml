@@ -3,7 +3,7 @@
   <channel>
       <title>Recent Content on pa.stjean.me </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://localhost:1313/index.xml/</link>
+    <link>http://pa.stjean.me/index.xml/</link>
     
     
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>me!</title>
-      <link>http://localhost:1313/about/</link>
+      <link>http://pa.stjean.me/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
       
-      <guid>http://localhost:1313/about/</guid>
+      <guid>http://pa.stjean.me/about/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m P-A, I&amp;rsquo;m from &lt;a href=&#34;https://duckduckgo.com/Sept-%C3%8Eles%2C_Quebec&#34;&gt;Sept-Iles,Qc&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;I am currently a research student in master of computer science at &lt;a href=&#34;http://www.ulaval.ca/&#34;&gt;Université Laval&lt;/a&gt; and have a degree in software engineering at &lt;a href=&#34;http://etsmtl.ca/&#34;&gt;ÉTS&lt;/a&gt;. I&amp;rsquo;m studying computational &amp;amp; systems biology with the nice and patient professor &lt;a href=&#34;http://www2.ift.ulaval.ca/~hardy/Simon_Hardy/Welcome.html&#34;&gt;Simon Hardy&lt;/a&gt;.&lt;/p&gt;
@@ -31,10 +31,10 @@
     
     <item>
       <title>Lab</title>
-      <link>http://localhost:1313/projects/</link>
+      <link>http://pa.stjean.me/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
       
-      <guid>http://localhost:1313/projects/</guid>
+      <guid>http://pa.stjean.me/projects/</guid>
       <description>&lt;div id=&#34;userInfo&#34;&gt;
   
 &lt;/div&gt;
