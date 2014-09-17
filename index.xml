@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Recent Content on pa.stjean.me </title>
+      <generator uri="https://hugo.spf13.com">Hugo</generator>
+    <link>http://localhost:1313/index.xml/</link>
+    
+    
+    
+    <updated>Mon, 01 Jan 0001 00:00:00 UTC</updated>
+    
+    <item>
+      <title>me!</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
+      
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m P-A, I&amp;rsquo;m from &lt;a href=&#34;https://duckduckgo.com/Sept-%C3%8Eles%2C_Quebec&#34;&gt;Sept-Iles,Qc&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I am currently a research student in master of computer science at &lt;a href=&#34;http://www.ulaval.ca/&#34;&gt;Université Laval&lt;/a&gt; and have a degree in software engineering at &lt;a href=&#34;http://etsmtl.ca/&#34;&gt;ÉTS&lt;/a&gt;. I&amp;rsquo;m studying computational &amp;amp; systems biology with the nice and patient professor &lt;a href=&#34;http://www2.ift.ulaval.ca/~hardy/Simon_Hardy/Welcome.html&#34;&gt;Simon Hardy&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I have various interest in the computer world, mainly the web, programming languages, embedded software, distributed computing and software development methods. Some of my projects you can see &lt;a href=&#34;/projects&#34;&gt;here on this site&lt;/a&gt;,&lt;/p&gt;
+
+&lt;p&gt;Usually you can find me sitting on a beach, waiting for the wind to come so i can kiteboard and have some fun or working on some computer magic.&lt;/p&gt;
+
+&lt;p&gt;Im am hanging out on the internet mainly on &lt;a href=&#34;https://github.com/pastjean&#34;&gt;Github&lt;/a&gt; and &lt;a href=&#34;//twitter.com/pastjean&#34;&gt;Twitter&lt;/a&gt;. My twittering is a little passive but this may change anytime soon.&lt;/p&gt;
+
+&lt;p&gt;For the ones that mind, here’s my Resume/CV in &lt;a href=&#34;/about/cv-fr.svg&#34;&gt;French&lt;/a&gt; or in &lt;a href=&#34;/about/cv-fr.pdf&#34;&gt;pdf&lt;/a&gt;(sorry, if you really want it in english its almost done, just leave me a note and i&amp;rsquo;ll hurry, finish it and send it to you).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab</title>
+      <link>http://localhost:1313/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
+      
+      <guid>http://localhost:1313/projects/</guid>
+      <description>&lt;div id=&#34;userInfo&#34;&gt;
+  
+&lt;/div&gt;
+&lt;div id=&#34;repositories&#34;&gt;
+  
+&lt;/div&gt;
+
+
+&lt;script template hidden type=&#34;text/html&#34; id=&#34;userInfoTemplate&#34;&gt;&lt;/script&gt;
+
+&lt;script template hidden type=&#34;text/html&#34; id=&#34;reposInfoTemplate&#34; hidden&gt;
+ 
+  &lt;div class=&#34;projectGrid__item&#34;&gt;
+  &lt;a class=&#34;projectInfo projectInfo__language--&lt;%=language%&gt;&#34; href=&#34;&lt;%= html_url %&gt;&#34;&gt;
+   &lt;div class=&#34;projectInfo__name&#34;&gt;&lt;%=name%&gt;&lt;/div&gt;
+   &lt;div class=&#34;projectInfo__description&#34;&gt;&lt;%=description%&gt;&lt;/div&gt;
+  &lt;/a&gt;&lt;/div&gt;
+&lt;/script&gt;
+&lt;script&gt;
+(function(){
+  var cache = {};
+ 
+  this.tmpl = function tmpl(str, data){
+    // Figure out if we&#39;re getting a template, or if we need to
+    // load the template - and be sure to cache the result.
+    var fn = !/\W/.test(str) ?
+      cache[str] = cache[str] ||
+        tmpl(document.getElementById(str).innerHTML) :
+     
+      // Generate a reusable function that will serve as a template
+      // generator (and which will be cached).
+      new Function(&#34;obj&#34;,
+        &#34;var p=[],print=function(){p.push.apply(p,arguments);};&#34; +
+       
+        // Introduce the data as local variables using with(){}
+        &#34;with(obj){p.push(&#39;&#34; +
+       
+        // Convert the template into pure JavaScript
+        str
+          .replace(/[\r\t\n]/g, &#34; &#34;)
+          .split(&#34;&lt;%&#34;).join(&#34;\t&#34;)
+          .replace(/((^|%&gt;)[^\t]*)&#39;/g, &#34;$1\r&#34;)
+          .replace(/\t=(.*?)%&gt;/g, &#34;&#39;,$1,&#39;&#34;)
+          .split(&#34;\t&#34;).join(&#34;&#39;);&#34;)
+          .split(&#34;%&gt;&#34;).join(&#34;p.push(&#39;&#34;)
+          .split(&#34;\r&#34;).join(&#34;\\&#39;&#34;)
+      + &#34;&#39;);}return p.join(&#39;&#39;);&#34;);
+   
+    // Provide some basic currying to the user
+    return data ? fn( data ) : fn;
+  };
+})();
+  
+(function(){
+  &#34;use strict&#34;;
+  
+var githubUser = &#34;pastjean&#34;,
+    additionnalRepositories = [&#34;criusmq/woodstock&#34;,
+                               &#34;pastjean/chinookpack&#34;,
+                               &#34;pastjean/dotfiles&#34;,
+                               &#34;pastjean/svgnavigator&#34;,
+                               &#34;pastjean/git-cheat-sheet&#34;,
+                               &#34;pastjean/fujin&#34;,
+                               &#34;pastjean/windapprentice&#34;,
+                              &#34;pastjean/learngo&#34;,
+                              &#34;pastjean/limechat-molokai&#34;];
+
+var reposInfoURL = &#34;https://api.github.com/repos/&#34;,
+    userInfoURL = &#34;https://api.github.com/users/&#34;+githubUser,
+    userReposInfo = userInfoURL + &#34;/repos&#34;;
+
+  
+function XHR(method, url, handler){
+  var oReq = new XMLHttpRequest();
+  
+  var responseHandler = function(e){handler(this.responseText)}
+  
+  oReq.onload = responseHandler;
+  oReq.open(method,url,true);
+  oReq.send();
+}
+
+function getUserInfo(){
+    XHR(&#34;get&#34;,userInfoURL,function(data){
+      var userInfo = JSON.parse(data);
+    })
+
+};
+function getProjectsInfo(){
+    function addRepo(repo){
+      var store= document.getElementById(&#34;repositories&#34;)
+      store.innerHTML+=tmpl(&#34;reposInfoTemplate&#34;,repo)
+    }
+    // get own users repositories
+    //XHR(&#34;get&#34;,userReposInfo,function(data){
+    //  var reposInfo = JSON.parse(data);
+    //  reposInfo.forEach(function(repo){addRepo(repo)})
+    //});
+    // get additional repositories
+    additionnalRepositories.forEach(function(repo){
+      XHR(&#34;get&#34;,reposInfoURL+repo,function(data){
+        var repoInfo = JSON.parse(data);
+        addRepo(repoInfo)
+      })
+    })
+};
+
+function theProjectsHandler(){
+  // getUserInfo();
+  getProjectsInfo();
+}
+  
+if (window.addEventListener) {
+  window.addEventListener(&#39;load&#39;, theProjectsHandler, false);
+}
+else if (window.attachEvent) {
+  window.attachEvent(&#39;onload&#39;, theProjectsHandler );
+}
+})()
+&lt;/script&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
