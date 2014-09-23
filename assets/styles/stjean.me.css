@@ -187,13 +187,13 @@ blockquote:after {
  *       Site nav
  * ---------------------------- */
 
-.logo__shape, .logo__shape--light {
-  fill:#fafaf9;
-}
+.logo__shape,
 .logo__shape--dark {
   fill:#34495e;
 }
-
+.logo__shape--light {
+  fill:#fafaf9;
+}
 .site-nav{
   display:block;
   z-index:500;
